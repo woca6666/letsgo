@@ -2,6 +2,7 @@ package com.myzone.demomybatisplus.controller;
 
 import com.myzone.demomybatisplus.entity.UserInfoEntity;
 import com.myzone.demomybatisplus.service.IUserInfoService;
+import com.myzone.demomybatisplus.utils.InsertConsumer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -36,6 +37,7 @@ public class UserInfoController {
             demo.setAge("age" + i);
             demo.setEmail("email" + i);
             demo.setPhone("phone" + i);
+            //第一种方式：
             userInfoServiceImpl.save(demo);//517084
         }
         log.info("耗时：" + (System.currentTimeMillis() - l));
@@ -57,17 +59,22 @@ public class UserInfoController {
             demo.setPhone("phone" + i);
             list.add(demo);
         }
+        //第二种方式：
 //        userInfoServiceImpl.saveBatch(list);//211085
 
-        userInfoServiceImpl.saveList(list);//38060
+        //第三种方式：
+//        userInfoServiceImpl.saveList(list);//38060
 
+        //第四种方式：
 //        list.parallelStream().forEach(demo -> {
 //            userInfoServiceImpl.save(demo);//181978
 //        });
 
+        //第五种方式：
 //        InsertConsumer.insertData(list, userInfoServiceImpl::saveBatch);//84977
 
-//        InsertConsumer.insertData(list, userInfoServiceImpl::saveList);//23656
+        //第六种方式：
+        InsertConsumer.insertData(list, userInfoServiceImpl::saveList);//23656
 
         log.info("耗时：" + (System.currentTimeMillis() - l));
         return "success";
