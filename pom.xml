@@ -12,6 +12,7 @@
     <modules>
         <module>demo-mybatisplus</module>
         <module>demo-utils</module>
+        <module>demo-bloomfilter</module>
     </modules>
 
     <properties>
