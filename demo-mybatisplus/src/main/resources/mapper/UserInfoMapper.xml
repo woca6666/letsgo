@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.myzone.demomybatisplus.mapper.UserInfoMapper">
+
+    <insert id="saveList">
+        insert into user_info(name, age,adress,email,phone)
+        values
+        <foreach collection="list" item="item" index="index" separator=",">
+            ( #{item.name}, #{item.age},#{item.adress},#{item.email},#{item.phone})
+        </foreach>
+    </insert>
+
+</mapper>
