@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/demo-utils/pom.xml" />
         <option value="$PROJECT_DIR$/demo-mapstruct/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-templatemethod/pom.xml" />
       </list>
     </option>
   </component>

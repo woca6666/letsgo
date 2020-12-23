@@ -10,6 +10,7 @@
         <module name="demo-bloomfilter" />
         <module name="demo-mapstruct" />
         <module name="demo-mybatisplus" />
+        <module name="demo-templatemethod" />
         <module name="demo-utils" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
       <module name="demo-bloomfilter" options="-parameters" />
       <module name="demo-mapstruct" options="-parameters" />
       <module name="demo-mybatisplus" options="-parameters" />
+      <module name="demo-templatemethod" options="-parameters" />
       <module name="demo-utils" options="-parameters" />
     </option>
   </component>
