@@ -24,7 +24,7 @@ public class InsertConsumer {
      * 插入方法
      *
      * @param list     插入数据集合
-     * @param consumer 消费型方法，直接使用 mapper::method 方法引用的方式
+     * @param consumer 消费型方法，直接使用 utils::method 方法引用的方式
      * @param <T>      插入的数据类型
      */
     public static <T> void insertData(List<T> list, Consumer<List<T>> consumer) {

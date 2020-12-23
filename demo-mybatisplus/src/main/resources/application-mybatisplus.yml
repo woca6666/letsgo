@@ -1,8 +1,8 @@
 mybatis-plus:
-  # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
-  # 如果是放在resource目录 classpath:/mapper/*Mapper.xml
-  #  mapper-locations: classpath*:com/myzone/**/**.xml,classpath*:mapping/**/**.xml
-  mapper-locations: classpath:/mapper/*.xml
+  # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/utils/*Mapper.xml
+  # 如果是放在resource目录 classpath:/utils/*Mapper.xml
+  #  utils-locations: classpath*:com/myzone/**/**.xml,classpath*:mapping/**/**.xml
+  mapper-locations: classpath:/utils/*.xml
   #实体扫描，多个package用逗号或者分号分隔
   type-aliases-package: com.myzone.**.entity,com.myzone.**.dto
   global-config:

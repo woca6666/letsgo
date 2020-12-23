@@ -10,8 +10,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/demo-utils/pom.xml" />
-        <option value="$PROJECT_DIR$/demo-mybatisplus/pom.xml" />
-        <option value="$PROJECT_DIR$/demo-bloomfilter/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-mapstruct/pom.xml" />
       </list>
     </option>
   </component>
