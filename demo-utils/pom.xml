@@ -30,6 +30,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!-- guava -->
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <dependency>
@@ -64,6 +71,13 @@
             <version>1.130</version>
         </dependency>
         <!-- 手机号码归属地查询依赖jar包 end-->
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.56</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 
