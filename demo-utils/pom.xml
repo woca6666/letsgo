@@ -30,12 +30,53 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!-- guava -->
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>[24.1.1,)</version>
+        </dependency>
+
+        <!-- 手机号码归属地查询依赖jar包 start-->
+        <!-- https://mvnrepository.com/artifact/com.googlecode.libphonenumber/libphonenumber -->
+        <dependency>
+            <groupId>com.googlecode.libphonenumber</groupId>
+            <artifactId>libphonenumber</artifactId>
+            <version>8.12.10</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.libphonenumber/geocoder -->
+        <dependency>
+            <groupId>com.googlecode.libphonenumber</groupId>
+            <artifactId>geocoder</artifactId>
+            <version>2.140</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.libphonenumber/prefixmapper -->
+        <dependency>
+            <groupId>com.googlecode.libphonenumber</groupId>
+            <artifactId>prefixmapper</artifactId>
+            <version>2.151</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.libphonenumber/carrier -->
+        <dependency>
+            <groupId>com.googlecode.libphonenumber</groupId>
+            <artifactId>carrier</artifactId>
+            <version>1.130</version>
+        </dependency>
+        <!-- 手机号码归属地查询依赖jar包 end-->
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.56</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>

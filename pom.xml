@@ -15,6 +15,7 @@
         <module>demo-bloomfilter</module>
         <module>demo-mapstruct</module>
         <module>demo-templatemethod</module>
+        <module>demo-security</module>
     </modules>
 
     <properties>
