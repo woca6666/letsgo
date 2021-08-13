@@ -16,6 +16,8 @@
         <module>demo-mapstruct</module>
         <module>demo-templatemethod</module>
         <module>demo-security</module>
+        <module>demo-shardingjdbc</module>
+        <module>demo-feign</module>
     </modules>
 
     <properties>
